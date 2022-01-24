@@ -1,0 +1,73 @@
+/* controls overall page */
+.App {
+  background: rgb(99, 146, 124);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* top header */
+.header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding:0 1rem;
+  background: rgb(255,255,255,0.3);
+}
+
+/* pie logo (probably change lol) */
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: url('https://lh3.googleusercontent.com/jAXeLh-qOzTAnTxmLZMUBQRQc3409ZEnAytRO4ooirBKdjJAHTvzEAXOj_Ej0NhY-8LAisNEfhhNxmlf1QIP8wUDGifBZgWM0Ma9sgGD0pMcfNgb0gHeFpDtaukT0-SwACTjhOgK2Q=w2400');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+/* main "CHATTER!" text */
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+/* bottom of page */
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding:0 1rem;
+  background: rgb(255,255,255,0.3);
+  position: relative;
+}
+
+/* controls area where text goes */
+.text-input {
+  width: 95%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem; 
+  padding: 0 1rem; 
+  background: black;
+  position: relative;
+}
+
+/* arrow button */
+.send {
+  background: white;
+  border-radius: 50%;
+  border: none; 
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 3.5rem;
+  cursor: pointer;
+}
