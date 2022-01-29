@@ -1,17 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import TextInput from './TextInput';
 
 function App() {
   return (
     <div className="App">
       <header className='header'> 
-        <div className='logo'/>
+        <div className='logo' />
         <span className='title'>CHATTER!</span>
       </header>
-      <footer className='footer'>
-        <input className='text-input' />
-        <button className='send'>↑</button>
-      </footer>
+      <TextInput />
      </div>
   );
 }
