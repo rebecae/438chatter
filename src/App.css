@@ -38,6 +38,7 @@
   margin-left: 1rem;
 }
 
+/* styling of all messages */
 .messages {
   display: flex;
   flex-direction: column-reverse;
@@ -47,6 +48,7 @@
   min-height: calc(100vh - 4rem - 4rem);
 }
 
+/* individual message styling */
 .message {
   color: white;
   background: black;
