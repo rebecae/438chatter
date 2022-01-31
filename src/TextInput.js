@@ -5,10 +5,17 @@ import { useState } from "react";
 function TextInput(props) {
   const [text, setText] = useState('');
 
-  function click() {
+  function send() {
     props.sendMessage(text);
     setText("");
   }
+
+	function onKeyPress(e) {
+		// console.log(e);
+		if (e.key === "Enter") {
+			send();
+		}
+	}
 
 	return (
     <footer className='footer'>
@@ -16,8 +23,9 @@ function TextInput(props) {
         className='text-input' 
         value={text} 
 				onChange={(e) => setText(e.target.value)}  
+				onKeyPress ={onKeyPress}
       />
-    	<button className='send' onClick={click}>
+    	<button className='send' onClick={send}>
       	↑
     	</button>
     </footer>
