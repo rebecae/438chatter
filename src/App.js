@@ -8,7 +8,7 @@ function App() {
 
   function sendMessage(msg) {
     console.log(' MY MESSAGE', msg);
-    setMessages([...messages, msg]);
+    setMessages([msg, ...messages]);
   }
 
   console.log(messages);
