@@ -1,25 +1,36 @@
 import { useState } from "react";
+import {FiEdit} from "react-icons/fi";
 
 function NamePicker() {
 	const [editName, setEditName] = useState(false);
 	const [name, setName] = useState('');
 	
-	
-	return (
-    <div className='footer'>
-		<button> </button>
-      <input 
-        className='username' 
-        value={text} 
-				onChange={(e) => setText(e.target.value)}  
-				onKeyPress ={onKeyPress}
-      />
-    	<button className='send' onClick={send}>
-      	↑
-    	</button>
-    </div>
-	);
+	function ok() {
+		props.setUsername(name);
+		setEditName(false);
+	}
 
+	if (editName) {
+		return (
+			<div className='name-picker'>
+				<input 
+					className="name-picker-input"
+					onChange={(e) => editName(e.target.value)}
+					value={name}
+				></input>
+				<button className="name-picker-button" onClick={ok}>
+					OK
+				</button>
+			</div>
+		);
+  }
+
+	return (
+		<div className="name-picker">
+			<span className="name-picker-name"> {name || "Set Username:"} </span>
+			<FiEdit size="24" onClick={() => setEditName(true)} />
+		</div>
+	)
 
 }
 

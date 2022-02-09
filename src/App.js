@@ -3,6 +3,7 @@ import TextInput from './TextInput';
 import { useState } from 'react';
 import Header from './Header';
 import Camera from 'react-snap-pic';
+import NamePicker from "./NamePicker";
 
 function App() {
   const [messages, setMessages] = useState([]);
