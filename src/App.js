@@ -33,7 +33,7 @@ function App() {
       {showCamera && <Camera takePicture={takePicture} />}
       <header className='header'> 
 				<div className='logo' />
-				<span className='title'>CHATTER!</span>
+				<span className='title'>The Pie Hole</span>
 				<NamePicker setUsername={setUsername}/>
 		  </header>
 

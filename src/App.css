@@ -1,6 +1,6 @@
 /* controls overall page */
 .App {
-  background: rgb(99, 146, 124);
+  background:linear-gradient(145deg, rgb(156, 80, 3) 40%, rgb(233, 196, 106)) 0% 0% / cover; 
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,4 +55,11 @@
   padding: 0.5rem 1rem;
   margin: 0.2rem;
   border-radius: 0.3rem;
+}
+
+
+.name-picker {
+  color: white;
+  margin-left: auto;
+  margin-right: 1rem;
 }
